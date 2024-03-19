@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "warefare_backend": {
+      "main": "src/warefare_backend/main.mo",
+      "type": "motoko"
+    },
+    "warefare_frontend": {
+      "dependencies": [
+        "warefare_backend"
+      ],
+      "source": [
+        "src/warefare_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "warefare_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
